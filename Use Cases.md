@@ -1,6 +1,6 @@
 <img width="1930" height="1814" alt="image" src="https://github.com/user-attachments/assets/56ab663e-761c-4527-b741-00da83d2faf8" />
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-1: Query Academic or Administrative Information
 
