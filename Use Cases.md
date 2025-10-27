@@ -42,7 +42,7 @@ UC-6: Manage System Performance and Operation
 
 Description: Administrators and system maintainers should keep the system functioning, providing continuous service and support to over 5000 users, and automatically recover from system failures. Users can track health metrics, latency, errors, monitor system usage, and generate reports.
 
-Requirements: R7, RA4, RA6, RA7, RM2, RM7
+Requirements: R7, RA4, RA6, RA7, RM2, RM7, RS11
 
 
 
