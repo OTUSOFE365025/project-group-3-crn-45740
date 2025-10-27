@@ -24,9 +24,9 @@ Requirements: RS3, RL3, RA4
 
 UC-4: User Authentication 
 
-Description: Students log in through institutional SSO and can personalize settings such as language and notification preferences.
+Description: Students log in through institutional SSO and can personalize settings such as language and notification preferences. TAs should only have access and permissions set by the lecturers. Role-based access is provided to system maintainers for maintenance operations.
 
-Requirements: RS6, RS7, R8
+Requirements: RS6, RS7, RL5, RM7 R8
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ UC-6: Manage System Performance and Operation
 
 Description: Administrators and system maintainers should keep the system functioning, providing continuous service and support to over 5000 users, and automatically recover from system failures. Users can track health metrics, latency, errors, monitor system usage, and generate reports.
 
-Requirements: R7, RA4, RA6, RA7, RM2, RM7, RS11
+Requirements: R7, RA4, RA6, RA7, RM2, RM7, RS11, RD3
 
 
 
