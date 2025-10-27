@@ -2,7 +2,7 @@ QA-1
 
 Quality Attribute: Performance
 
-Scenario: When a student asks, “When is *insert course* final exam?”, the system should be able to process the request and return a valid response under normal operating conditions.
+Scenario: When a student asks, “When is the *insert course* final exam?”, the system should be able to process the request and return a valid response under normal operating conditions.
 
 Associated Use Case: UC-1
 
