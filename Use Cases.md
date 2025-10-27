@@ -14,6 +14,7 @@ Description: Users can send and receive notifications and announcements (includi
 
 Requirements: RS2, RL4, RL7, RA3
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-3: Access Student Data
 
@@ -21,6 +22,7 @@ Description: System displays personalized data summaries such as student perform
 
 Requirements: RS3, RL3, RA4
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Use Case ID: UC-4: User Authentication
 
@@ -28,6 +30,7 @@ Description: Students log in through institutional SSO and can personalize setti
 
 Requirements: RS6, RS7, R8
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Use Case ID: UC-5: Manage Course and Academic Content
 
@@ -35,6 +38,7 @@ Description: Lecturers can upload or update course materials and manage access f
 
 Requirements: RL1, RL5
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Use Case ID: UC-6: Schedule and Manage Events
 
@@ -42,6 +46,7 @@ Description: Students can create, view, or export calendar events, and lecturers
 
 Requirements: RS13, RL4, RD1
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-7: Integrate with External Systems
 
@@ -49,6 +54,7 @@ Description: The platform connects to LMS, registration, and calendar systems, w
 
 Requirements: R3, RA1, RD1, RD2, RD4
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-8: Monitor System Performance
 
@@ -56,6 +62,7 @@ Description: Users can track health metrics, latency, errors, monitor system usa
 
 Requirements: RM2, RA4
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-9: Deploy and Configure System Components
 
@@ -63,6 +70,7 @@ Description: System Maintainers deploy updates, configure AI models, and manage 
 
 Requirements: RM1, RM3, RM5
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-10: Manage Security
 
@@ -70,6 +78,7 @@ Description: Keeps data handling secure (i.e., backing up and restoring data) wh
 
 Requirements: RM6, RA5, R8
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 UC-11: Maintain High Availability and Scalability
 
