@@ -13,7 +13,7 @@ Work Distribution:
 
 Jayden Mallari: Use cases, use case diagram, quality attributes
 
-Rabab Raza: Business Case, Concerns, Constraints
+Rabab Raza: Business Case, concerns, constraints
 
 -----------------------------------------------------------------------------------------------------------
 
