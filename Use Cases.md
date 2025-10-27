@@ -30,7 +30,7 @@ Requirements: RS6, RS7, R8
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-UC-5: Manage Course Work and Contents
+UC-5: Manage Course Work and Content
 
 Description: Lecturers can upload or update course materials and manage access for teaching assistants. Students can create, view, or export calendar events, and lecturers can schedule reminders.
 
