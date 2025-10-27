@@ -2,7 +2,7 @@ UC-1: Query Academic or Administrative Information
 
 Description: Users (students or lecturers) can ask the assistant for information such as schedules, grades, deadlines, or course data using natural language.
 
-Requirements: R1, R5, RS1, RL6
+Requirements: R1, R5, RS1, RS10, RL6
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
