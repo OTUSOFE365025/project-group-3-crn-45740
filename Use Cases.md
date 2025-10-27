@@ -5,7 +5,7 @@ Description: (students or lecturers) can ask the assistant for information such 
 
 Requirements: R1, R5, RS1, RL6
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 UC-2: View Notifications and Announcements
