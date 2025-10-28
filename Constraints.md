@@ -16,6 +16,8 @@ Constraint: AIDAP must be integrated into existing university systems (LMS, regi
 
 Associated Requirements: R3, RD2
 
+--------------------------------------------------------------------------------------------------------------------------
+
 CON-3
 
 
@@ -23,6 +25,8 @@ Constraint: The system must offer high availability (99.5% monthly uptime) and s
 
 
 Associated Requirements: RS11, RA6, RA7
+
+------------------------------------------------------------------------------------------------------------------------------
 
 CON-4
 
@@ -32,6 +36,8 @@ Constraint: The system must ensure secure authentication and authorization via i
 
 Associated Requirements: RS7, RM7
 
+----------------------------------------------------------------------------------------------------------------------------
+
 CON-5
 
 
@@ -40,6 +46,7 @@ Constraint: The typical system's response to user requests should be no more tha
 
 Associated Requirements: RS10
 
+---------------------------------------------------------------------------------------------------------------------------
 CON-6
 
 
@@ -48,6 +55,7 @@ Constraint: The system must be deployable as a cloud-native environment with con
 
 Associated Requirements: R7, RM1
 
+---------------------------------------------------------------------------------------------------------------------------
 CON-7
 
 
@@ -56,6 +64,7 @@ Constraint: The platform needs to enable multilingual text and voice interaction
 
 Associated Requirements: RS4, R4
 
+---------------------------------------------------------------------------------------------------------------------------
 CON-8
 
 
@@ -64,6 +73,7 @@ Constraint: The system must synchronously update with external data sources and 
 
 Associated Requirements: RD1, RD3
 
+---------------------------------------------------------------------------------------------------------------------------
 
 
 
