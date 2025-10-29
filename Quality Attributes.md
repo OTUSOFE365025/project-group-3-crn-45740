@@ -13,7 +13,7 @@
     <tr>
       <td><strong>QA-1</strong></td>
       <td>Performance</td>
-      <td>When a student asks, “When is the <em>course</em> final exam?”, the system should be able to process the request and return a valid response under normal operating conditions.</td>
+      <td>When a student asks, “When is the Systems Programming final exam?”, the system should be able to process the request and return a valid response under normal operating conditions if the student is enrolled in that course.</td>
       <td>UC-1</td>
     </tr>
     <tr>
