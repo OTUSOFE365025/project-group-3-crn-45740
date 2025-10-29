@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td><strong>CRN-1</strong></td><td>Data Privacy & Security: Maintaining user credentials, conversations, and academic data encrypted and accessible only to authorized users.</td><td>R8, RA5, RS8</td></tr>
+    <tr><td><strong>CRN-1 </strong></td><td>Data Privacy & Security: Maintaining user credentials, conversations, and academic data encrypted and accessible only to authorized users.</td><td>R8, RA5, RS8</td></tr>
     <tr><td><strong>CRN-2</strong></td><td>Scalability & Performance: Handling a maximum of 5,000 concurrent requests with no reduction in system or response quality.</td><td>RA7, RS10</td></tr>
     <tr><td><strong>CRN-3</strong></td><td>Integration Reliability: Maintaining constant interoperability with multiple sources of data (LMS, registration, email, calendar APIs).</td><td>R3, RD1, RD2</td></tr>
     <tr><td><strong>CRN-4</strong></td><td>AI Accuracy & Adaptability: Ensuring the assistant correctly interprets natural-language inquiries and improves over time based on learning.</td><td>R5, RS5</td></tr>
