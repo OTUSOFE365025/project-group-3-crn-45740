@@ -37,30 +37,3 @@
   </tbody>
 </table>
 
-
-<div style="overflow-x:auto;">
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">ID</th>
-      <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Quality Attribute</th>
-      <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Scenario</th>
-      <th style="border: 1px solid #ccc; padding: 6px; text-align: left;">Associated Use Case</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ccc; padding: 6px;">QA-1</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">Performance</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">When a student asks, “When is the <em>course</em> final exam?”, the system should be able to process the request and return a valid response under normal operating conditions.</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">UC-1</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ccc; padding: 6px;">QA-2</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">Availability</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">If there is any detected fault or system failure, AIDAP will back up and recover the data. The system should maintain an uptime of 99.5% per month.</td>
-      <td style="border: 1px solid #ccc; padding: 6px;">UC-6</td>
-    </tr>
-  </tbody>
-</table>
-</div>
