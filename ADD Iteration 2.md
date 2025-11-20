@@ -178,3 +178,130 @@
     </td>
   </tr>
 </table>
+
+<h2>Step 6: Sketch views and record design decisions</h2>
+
+Reference Architecture:
+
+<img width="900" height="1200" alt="image" src="https://github.com/user-attachments/assets/59597c9c-215d-43f0-9d32-ce75e5e7aeeb" />
+
+
+<h4>Client Side Components</h4>
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td>ConversationController</td>
+    <td>Manages chat panel, voice input, and text queries.</td>
+  </tr>
+  <tr>
+    <td>DashboardController</td>
+    <td>Displays widgets, schedules, analytics, and notifications.</td>
+  </tr>
+  <tr>
+    <td>PreferencesUI</td>
+    <td>Allow users to set language, notification, and personalization options.</td>
+  </tr>
+  <tr>
+    <td>NotificationCenterUI</td>
+    <td>Shows announcements, reminders, and alerts.</td>
+  </tr>
+  <tr>
+    <td>LocalStorageAdapter</td>
+    <td>Interfaces with browser IndexedDB for offline cache.</td>
+  </tr>
+</table>
+
+<h4>Server Components</h4>
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td>APIGateway</td>
+    <td>Routes client requests to backend services (REST/GraphQL, WebSocket).</td>
+  </tr>
+  <tr>
+    <td>AuthService</td>
+    <td>Handles SSO login, token validation, and role enforcement.</td>
+  </tr>
+  <tr>
+    <td>NotificationService</td>
+    <td>Manages announcements, reminders, and anomaly alerts.</td>
+  </tr>
+  <tr>
+    <td>QueryService</td>
+    <td>Provides course schedules, deadlines, and analytics.</td>
+  </tr>
+  <tr>
+    <td>MonitoringService</td>
+    <td>Collects system health, latency, and usage metrics.</td>
+  </tr>
+  <tr>
+    <td>NLPProcessor</td>
+    <td>Interprets natural-language queries.</td>
+  </tr>
+  <tr>
+    <td>ResponseComposer</td>
+    <td>Builds contextual answers using history.</td>
+  </tr>
+  <tr>
+    <td>WorkflowManager</td>
+    <td>Manages reminders, broadcasts, and anomaly detection.</td>
+  </tr>
+  <tr>
+    <td>PolicyManager</td>
+    <td>Enforces privacy, compliance, and role restrictions.</td>
+  </tr>
+  <tr>
+    <td>SessionManager</td>
+    <td>Maintains active user sessions and roles.</td>
+  </tr>
+  <tr>
+    <td>BusinessEntities</td>
+    <td>Domain objects: course, schedule, announcement, user, role.</td>
+  </tr>
+  <tr>
+    <td>InteractionRepository</td>
+    <td>Stores historical conversations and interactions.</td>
+  </tr>
+  <tr>
+    <td>CourseRepository</td>
+    <td>Maintains course data and schedules.</td>
+  </tr>
+  <tr>
+    <td>AnnouncementRepository</td>
+    <td>Persists announcements and notifications.</td>
+  </tr>
+  <tr>
+    <td>PreferencesRepository</td>
+    <td>Saves user settings.</td>
+  </tr>
+  <tr>
+    <td>BackupManager</td>
+    <td>Ensures high availability and disaster recovery.</td>
+  </tr>
+  <tr>
+    <td>ValidationUtility</td>
+    <td>Input validation, multilingual support, formatting.</td>
+  </tr>
+  <tr>
+    <td>DataAdapters</td>
+    <td>Normalize and sync data from LMS, Registration, Calendar, Email.</td>
+  </tr>
+  <tr>
+    <td>SecurityModule</td>
+    <td>Enforces authentication, authorization, and compliance.</td>
+  </tr>
+  <tr>
+    <td>OperationalMonitor</td>
+    <td>Logging, monitoring, error handling.</td>
+  </tr>
+  <tr>
+    <td>CommunicationSDK</td>
+    <td>Provides standardized libraries for communication, notifications, and work modules.</td>
+  </tr>
+</table>
