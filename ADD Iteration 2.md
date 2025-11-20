@@ -108,3 +108,33 @@
     </ul>
   </li>
 </ul>
+
+
+<h2>Step 4: Choose one or more design concepts that satisfy the selected driver</h2>
+
+<table>
+  <tr>
+    <th>Design Decision</th>
+    <th>Rationale</th>
+  </tr>
+  <tr>
+    <td>Cache-aside Pattern with Redis</td>
+    <td>Optimizes read-heavy endpoints (schedules, announcements), improving QA-1 Performance by reducing external system calls.</td>
+  </tr>
+  <tr>
+    <td>SSO Integration (OIDC/SAML)</td>
+    <td>Completes QA-3 Security by authenticating users via institutional IdP and enforcing role-based access control.</td>
+  </tr>
+  <tr>
+    <td>Autoscaling &amp; Health Checks</td>
+    <td>Ensures QA-2 Availability with automatic scaling, failover, and health monitoring of all tiers.</td>
+  </tr>
+  <tr>
+    <td>Monitoring &amp; Logging</td>
+    <td>Provides observability into latency, errors, and uptime; supports operational decision-making and early detection of integration failures (QA-2, CRN-3).</td>
+  </tr>
+  <tr>
+    <td>Distributed Deployment / Cloud-Native</td>
+    <td>Supports scalability and reliability requirements (CON-6); allows independent scaling of presentation, business, and integration tiers.</td>
+  </tr>
+</table>
