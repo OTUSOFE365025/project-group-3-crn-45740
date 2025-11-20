@@ -263,6 +263,8 @@ Initial Deployment Diagram:
 </table>
 
 
+
+
 <h2>Step 7: Perform analysis of the current design and review the iteration goal and design objectives</h2>
 
 <table>
