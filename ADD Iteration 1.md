@@ -92,37 +92,37 @@
 
 <table>
   <tr>
-    <th>Design Decisions and Location</th>
+    <th>Design Decision / Alternative</th>
     <th>Rationale</th>
   </tr>
   <tr>
-    <td>Logically structure the system using the Rich Internet Application (RIA) reference architecture.</td>
+    <td>Rich Internet Application (RIA) Reference Architecture</td>
     <td>
-      The reference architecture RIA (Section A.1.3) supports the necessary conversational multi-device interfaces of AIDAP, namely text, voice, mobile, and web. It enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces. This leads directly to a complete fulfilment of requirements about interoperability, R3 and RD2; usability: RS9 and RS12; and performance: RS10. The security and operational management components of RIA also match the privacy and availability requirements of R8, RS7, RA5, and RA6.
+      Supports conversational multi-device interfaces (text, voice, mobile, web). Enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces. Directly fulfils requirements for interoperability (R3, RD2), usability (RS9, RS12), and performance (RS10). Security and operational management components match privacy and availability requirements (R8, RS7, RA5, RA6).
     </td>
   </tr>
   <tr>
     <td>Web Applications (Discarded Alternative)</td>
     <td>
-      Although web applications bring portability and ease of deployment, they fall short in offering a rich, conversational UI experience across modalities—voice, text, multi-language. Advanced interaction and personalisation are expected features in AIDAP, which surpass the thin UI model of a typical web application.
+      Bring portability and ease of deployment but fall short in offering a rich, conversational UI experience across modalities (voice, text, multi-language). Lack advanced interaction and personalisation features expected in AIDAP.
     </td>
   </tr>
   <tr>
     <td>Rich Client Applications (Discarded Alternative)</td>
     <td>
-      Rich client applications provide high interactivity but require installation and maintenance on every user's device. This approach is too heavy for AIDAP, which needs to be cloud-native and available on mobile, web, and voice assistants, and complicates deployment and updates.
+      Provide high interactivity but require installation and maintenance on every user's device. Too heavy for AIDAP, which must be cloud-native and available across mobile, web, and voice assistants. Complicates deployment and updates.
     </td>
   </tr>
   <tr>
     <td>Mobile Applications (Discarded Alternative)</td>
     <td>
-      Mobile applications are useful for handheld devices, but are narrow in scope and do not enrich the multi-channel conversational interface required by AIDAP. They also strongly rely on device resources and unreliable connectivity, conflicting with the broad accessibility and scalability requirements set by AIDAP.
+      Useful for handheld devices but narrow in scope. Do not enrich the multi-channel conversational interface required by AIDAP. Strongly rely on device resources and connectivity, conflicting with accessibility and scalability requirements.
     </td>
   </tr>
   <tr>
     <td>Three-Tier Distributed Deployment Pattern (Server Side)</td>
     <td>
-      Logically structure the server part of AIDAP using a three-tier distributed deployment pattern (presentation tier, business tier, integration tier). This separation supports scalability (RA7), high availability (RA6), and performance (RS10). It also aligns with cloud-native deployment (R7) and allows independent scaling of tiers. The integration tier is critical for connecting to external university systems (RD1–RD4).
+      Separates presentation, business, and integration tiers. Supports scalability (RA7), high availability (RA6), and performance (RS10). Aligns with cloud-native deployment (R7) and allows independent scaling of tiers. Integration tier is critical for connecting to external university systems (RD1–RD4).
     </td>
   </tr>
 </table>
