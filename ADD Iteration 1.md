@@ -166,6 +166,102 @@
 Rich Internet Application Reference Architecture
 <img width="1000" height="1500" alt="image" src="https://github.com/user-attachments/assets/f0f18194-d2e2-4d22-8b72-b64a2ce9cbfd" />
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
+<h3>Client Side Components</h3>
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td>Conversation UI</td>
+    <td>Provide conversational access to institutional data and services through text/voice.</td>
+  </tr>
+  <tr>
+    <td>Dashboard and Widgets</td>
+    <td>Display personalised dashboards that summarise upcoming events, performance indicators, and analytics.</td>
+  </tr>
+  <tr>
+    <td>Preferences and Settings</td>
+    <td>Allow students to change their notification/language preferences; personalise settings based on their history.</td>
+  </tr>
+  <tr>
+    <td>Local Storage / IndexedDB</td>
+    <td>Store recent responses and preferences locally for each user device.</td>
+  </tr>
+</table>
+
+<h3>Server Section</h3>
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Responsibility</th>
+  </tr>
+  <tr>
+    <td>Public APIs for chat, schedules, announcements, analytics</td>
+    <td>Expose endpoints for querying academic info, sending/receiving notifications, and managing preferences.</td>
+  </tr>
+  <tr>
+    <td>Notifications/Event Schemas</td>
+    <td>Define structure for announcements, reminders, anomalies, and broadcasts.</td>
+  </tr>
+  <tr>
+    <td>API Gateway</td>
+    <td>Provide public APIs for chat, notifications, and preferences; enforce secure access.</td>
+  </tr>
+  <tr>
+    <td>Task Scheduling Services</td>
+    <td>Support reminders, coursework management, and scheduling.</td>
+  </tr>
+  <tr>
+    <td>Domain Objects</td>
+    <td>Represent core academic entities in the system (Course, Schedule, Announcement/Event, User, Role). Encapsulates rules and data structures for queries, notifications, and analytics.</td>
+  </tr>
+  <tr>
+    <td>Response Composition Module</td>
+    <td>Generate answers to user queries by combining stored knowledge (historical interactions) with live data from external systems.</td>
+  </tr>
+  <tr>
+    <td>Persistence of Interactions</td>
+    <td>Store historical conversations, preferences, and notifications for personalisation and auditing.</td>
+  </tr>
+  <tr>
+    <td>Validation / Multi-Language Support</td>
+    <td>Validate inputs/outputs and support multilingual queries and responses. Ensure correctness and accessibility across diverse users.</td>
+  </tr>
+  <tr>
+    <td>Integration Adapters for LMS, Calendar, Email</td>
+    <td>Provide secure, reliable connections to external university systems (LMS, registration, calendar, email). Handle synchronisation, retries, and normalisation of data.</td>
+  </tr>
+</table>
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Initial Deployment Diagram:
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/66de6f3b-bed8-4a6b-afa1-631804628dc3" />
+
+
+<h3>Relationships</h3>
+<table>
+  <tr>
+    <th>Relationship</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Between User Workstation/Device and Application Server</td>
+    <td>The client securely communicates with the server using HTTPS.</td>
+  </tr>
+  <tr>
+    <td>Between Application Server and Database Server</td>
+    <td>The application server reads and writes data to the database through SQL queries.</td>
+  </tr>
+  <tr>
+    <td>Between Application Server and LMS, Registration, Calendar, and Email Servers</td>
+    <td>Integration adapters connect the server to institutional systems through secure APIs.</td>
+  </tr>
+</table>
+
 
 
 
