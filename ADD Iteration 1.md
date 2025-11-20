@@ -88,37 +88,65 @@
 <li><strong>System Management and Monitoring Module</strong> – Tracks uptime, latency, errors, and supports failover</li>
 </ul>
 
+
 <h2>Step 4: Choose one or more design concepts that satisfy the selected driver</h2>
 
 <table>
-<tr>
-<th>Design Decisions and Location</th>
-<th colspan="2">Rationale</th>
-</tr>
-<tr>
-<td>Logically structure the system using the Rich Internet Application (RIA) reference architecture.</td>
-<td colspan="2">The reference architecture RIA supports the necessary conversational multi-device interfaces of AIDAP, namely text, voice, mobile, and web. It enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces.</td>
-</tr>
-<tr>
-<td rowspan="3"></td>
-<td colspan="2">Discarded Alternatives</td>
-</tr>
-<tr>
-<td>Alternative</td>
-<td>Reason for Discarding</td>
-</tr>
-<tr>
-<td>Web Applications</td>
-<td>Although web applications bring portability and ease of deployment, they fall short in offering a rich, conversational UI experience across modalities.</td>
-</tr>
-<tr>
-<td>Rich Client Applications</td>
-<td>Require installation and maintenance on every user's device. Too heavy for AIDAP.</td>
-</tr>
-<tr>
-<td>Mobile Applications</td>
-<td>Narrow in scope, rely on device resources, conflict with accessibility and scalability requirements.</td>
-</tr>
+  <tr>
+    <th>Design Decisions and Location</th>
+    <th colspan="2">Rationale</th>
+  </tr>
+  <tr>
+    <td>Logically structure the system using the Rich Internet Application (RIA) reference architecture.</td>
+    <td colspan="2">
+      The reference architecture RIA (Section A.1.3) supports the necessary conversational multi-device interfaces of AIDAP, namely text, voice, mobile, and web. It enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces. This leads directly to a complete fulfilment of requirements about interoperability, R3 and RD2; usability: RS9 and RS12; and performance: RS10. The security and operational management components of RIA also match the privacy and availability requirements of R8, RS7, RA5, and RA6.
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="3"></td>
+    <td colspan="2">Discarded Alternatives</td>
+  </tr>
+  <tr>
+    <td>Alternative</td>
+    <td>Reason for Discarding</td>
+  </tr>
+  <tr>
+    <td>Web Applications</td>
+    <td>Although web applications bring portability and ease of deployment, they fall short in offering a rich, conversational UI experience across modalities-voice, text, multi-language. Advanced interaction and</td>
+  </tr>
 </table>
 
-<!-- More tables and figures continue in the same format... -->
+<table>
+  <tr>
+    <th></th>
+    <th>personalisation are expected features in AIDAP, which surpass the thin UI model of a typical web application.</th>
+  </tr>
+  <tr>
+    <td>Rich Client Applications</td>
+    <td>Rich client applications provide high interactivity but require installation and maintenance on every user's device. This approach is too heavy for AIDAP, which needs to be cloud-native and available on mobile, web, and voice assistants, and complicates deployment and updates.</td>
+  </tr>
+  <tr>
+    <td>Mobile Applications</td>
+    <td>Mobile applications are useful for handheld devices, but are narrow in scope and do not enrich the multi-channel conversational interface required by AIDAP. They also strongly rely on device resources and unreliable connectivity, conflicting with the broad accessibility and scalability requirements set by AIDAP.</td>
+  </tr>
+</table>
+
+<p>
+  Logically structure the server part of AIDAP<br>
+  using a three-tier distributed deployment<br>
+  pattern (presentation tier, business tier,<br>
+  integration tier)
+</p>
+
+<p>
+  This separation supports scalability (RA7),<br>
+  high availability (RA6), and performance<br>
+  (RS10). It also aligns with cloud-native<br>
+  deployment (R7) and allows independent
+</p>
+
+<p>
+  scaling of tiers. The integration tier is critical<br>
+  for connecting to external university systems<br>
+  (RD1-RD4).
+</p>
