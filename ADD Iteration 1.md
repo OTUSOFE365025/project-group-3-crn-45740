@@ -99,9 +99,18 @@
     <td>Rich Internet Application (RIA) Reference Architecture</td>
     <td>
       Supports conversational multi-device interfaces (text, voice, mobile, web). Enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces. Directly fulfils requirements for interoperability (R3, RD2), usability (RS9, RS12), and performance (RS10). Security and operational management components match privacy and availability requirements (R8, RS7, RA5, RA6).
-      <br><br>
-      <strong>Discarded Alternatives:</strong>
-      <table border="1" cellpadding="4" cellspacing="0">
+    </td>
+  </tr>
+  <tr>
+    <td>Three-Tier Distributed Deployment Pattern</td>
+    <td>
+      Separates presentation, business, and integration tiers. Supports scalability (RA7), high availability (RA6), and performance (RS10). Aligns with cloud-native deployment (R7) and allows independent scaling of tiers. Integration tier is critical for connecting to external university systems (RD1–RD4).
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <strong>Discarded Alternatives</strong>
+      <table border="1" cellpadding="4" cellspacing="0" width="100%">
         <tr>
           <th>Alternative</th>
           <th>Reason for Discarding</th>
@@ -125,12 +134,6 @@
           </td>
         </tr>
       </table>
-    </td>
-  </tr>
-  <tr>
-    <td>Three-Tier Distributed Deployment Pattern</td>
-    <td>
-      Separates presentation, business, and integration tiers. Supports scalability (RA7), high availability (RA6), and performance (RS10). Aligns with cloud-native deployment (R7) and allows independent scaling of tiers. Integration tier is critical for connecting to external university systems (RD1–RD4).
     </td>
   </tr>
 </table>
