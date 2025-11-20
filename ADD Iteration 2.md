@@ -138,3 +138,43 @@
     <td>Supports scalability and reliability requirements (CON-6); allows independent scaling of presentation, business, and integration tiers.</td>
   </tr>
 </table>
+
+
+<h2>Step 5: Instantiate architectural elements, allocate responsibilities, and define interfaces</h2>
+
+<table>
+  <tr>
+    <th>Design Decision</th>
+    <th>Rationale</th>
+  </tr>
+  <tr>
+    <td>Introduce integration adapters (LMS, Registration, Calendar, Email) in the Integration Layer</td>
+    <td>
+      Abstract external APIs, handle retries, error logging, and rate limiting. Supports CRN-3 (integration reliability) and CON-2 (secure integration).
+    </td>
+  </tr>
+  <tr>
+    <td>Create Domain Objects (Course, Schedule, Announcement, User, Role, Event) in the Business Logic Layer</td>
+    <td>
+      Encapsulate academic entities to provide a consistent internal representation. Supports UC-1, UC-2, UC-6.
+    </td>
+  </tr>
+  <tr>
+    <td>Implement the Cache-aside pattern with Redis in the Data Layer</td>
+    <td>
+      Optimize read-heavy endpoints (schedules, announcements), improving QA-1 (performance).
+    </td>
+  </tr>
+  <tr>
+    <td>Instantiate the security and identity module with OIDC/SAML</td>
+    <td>
+      Completes QA-3 (Security) by authenticating users via institutional IdP and enforcing role-based access control.
+    </td>
+  </tr>
+  <tr>
+    <td>Add Monitoring &amp; Logging Subsystem in the System Management Layer</td>
+    <td>
+      Provides observability into latency, errors, and uptime; supports QA-2 (availability) and CRN-5 (fault tolerance).
+    </td>
+  </tr>
+</table>
