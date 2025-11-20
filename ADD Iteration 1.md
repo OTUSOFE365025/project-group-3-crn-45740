@@ -131,3 +131,31 @@
     </td>
   </tr>
 </table>
+
+
+<h2>Step 5: Instantiate architectural elements, allocate responsibilities, and define interfaces</h2>
+
+<table>
+  <tr>
+    <td>Design Decision</td>
+    <td>Rationale</td>
+  </tr>
+  <tr>
+    <td>Instantiate the Presentation + Rich UI Engine from the Rich Internet Application reference architecture for the client side.</td>
+    <td>
+      Provides conversational, multi-device access (web, mobile, voice) and supports personalisation and caching. Directly satisfies RS9, RS12, RS14.
+    </td>
+  </tr>
+  <tr>
+    <td>Create Service Interfaces and Domain Objects in the server tier.</td>
+    <td>
+      Service Interfaces abstract external systems (LMS, registration, calendars, mail) while Domain Objects encapsulate academic entities (Course, Schedule, Announcement). This supports interoperability (R3, RD2) and modifiability (RM5).
+    </td>
+  </tr>
+  <tr>
+    <td>Define a Data Mapper layer with cross-cutting Security and Operational Management components.</td>
+    <td>
+      Data Mapper handles persistence of personalisation/history (R2, RS5). Security ensures SSO, privacy, and compliance (RS7, RS8, RA5). Operational Management supports monitoring, logging, and availability (RA4, RA6).
+    </td>
+  </tr>
+</table>
