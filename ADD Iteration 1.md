@@ -159,3 +159,13 @@
     </td>
   </tr>
 </table>
+
+
+<h2>Step 6: Sketch views and record design decisions</h2>
+
+Rich Internet Application Reference Architecture
+<img width="1000" height="1500" alt="image" src="https://github.com/user-attachments/assets/f0f18194-d2e2-4d22-8b72-b64a2ce9cbfd" />
+
+
+
+
