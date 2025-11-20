@@ -63,7 +63,7 @@
 </table>
 
 
-<h3>Step 2: Establish the iteration goal by selecting drivers</h3>
+<h2>Step 2: Establish the iteration goal by selecting drivers</h2>
 
 <ul>
   <li><strong>QA-1: Performance</strong> – Ensure the system responds within 2 seconds for typical queries; optimize read-heavy endpoints via caching.</li>
@@ -72,4 +72,39 @@
   <li><strong>CRN-3: Integration Reliability</strong> – Ensure adapters handle retries, errors, and rate limits.</li>
   <li><strong>CON-2: Integration with University Systems</strong> – Use secure, standardized APIs for all external system integrations without disrupting workflows.</li>
   <li><strong>CON-6: Cloud-Native Deployment</strong> – Deploy system to the cloud using CI/CD pipelines; support containerized services and auto-failover.</li>
+</ul>
+
+
+<h2>Step 3: Choose one or more elements to decompose</h2>
+
+<ul>
+  <li><strong>Services Layer</strong>
+    <ul>
+      <li>API Gateway / Backend-for-Frontend – entry points for client requests</li>
+      <li>Authentication Service – manages SSO, role-based access</li>
+      <li>Notification Service – handles announcements, reminders, anomaly alerts</li>
+      <li>Query Service – provides course schedules, deadlines, and analytics</li>
+      <li>Monitoring Service – exposes system health, latency, and usage metrics</li>
+    </ul>
+  </li>
+  <li><strong>Business Layer</strong>
+    <ul>
+      <li>Natural Language Processing Module – interprets user queries</li>
+      <li>Response Composition Module – combines stored history with live data</li>
+      <li>Workflow Manager – manages reminders, broadcasts, anomaly detection</li>
+      <li>Policy Enforcer – enforces global rules (privacy, compliance, role restrictions)</li>
+      <li>Business Entities – core domain objects: course, schedule, announcement, user, role</li>
+    </ul>
+  </li>
+  <li><strong>Data Layer</strong>
+    <ul>
+      <li>Persistence of interactions – stores historical conversations and preferences</li>
+      <li>Course/Schedule/Announcement Repository – maintains academic data</li>
+      <li>Notification/Event Repository – stores announcements, reminders, anomaly events</li>
+      <li>Preferences Repository – saves user settings</li>
+      <li>Cache – fast retrieval and offline support</li>
+      <li>Backup/Recovery Module – ensures high availability and backup recovery</li>
+      <li>Integration Data Adapters – sync data from LMS, Registration, Calendar, Email</li>
+    </ul>
+  </li>
 </ul>
