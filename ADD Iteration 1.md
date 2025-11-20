@@ -57,6 +57,10 @@
 <td>Constraints</td>
 <td colspan="3">All constraints were chosen to be architectural drivers.</td>
 </tr>
+<tr>
+<td>Concerns</td>
+<td colspan="3">All concerns were chosen to be architectural drivers.</td>
+</tr>
 </table>
 
 <h2>Step 2: Establish the iteration goal by selecting drivers</h2>
