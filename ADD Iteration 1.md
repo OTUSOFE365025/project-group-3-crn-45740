@@ -92,35 +92,43 @@
 
 <table>
   <tr>
-    <th>Design Decision / Alternative</th>
+    <th>Design Decision</th>
     <th>Rationale</th>
   </tr>
   <tr>
     <td>Rich Internet Application (RIA) Reference Architecture</td>
     <td>
       Supports conversational multi-device interfaces (text, voice, mobile, web). Enables client-side business logic and caching while connecting to institutional services (LMS, registration, calendars) using service interfaces. Directly fulfils requirements for interoperability (R3, RD2), usability (RS9, RS12), and performance (RS10). Security and operational management components match privacy and availability requirements (R8, RS7, RA5, RA6).
+      <br><br>
+      <strong>Discarded Alternatives:</strong>
+      <table border="1" cellpadding="4" cellspacing="0">
+        <tr>
+          <th>Alternative</th>
+          <th>Reason for Discarding</th>
+        </tr>
+        <tr>
+          <td>Web Applications</td>
+          <td>
+            Bring portability and ease of deployment but fall short in offering a rich, conversational UI experience across modalities (voice, text, multi-language). Lack advanced interaction and personalisation features expected in AIDAP.
+          </td>
+        </tr>
+        <tr>
+          <td>Rich Client Applications</td>
+          <td>
+            Provide high interactivity but require installation and maintenance on every user's device. Too heavy for AIDAP, which must be cloud-native and available across mobile, web, and voice assistants. Complicates deployment and updates.
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile Applications</td>
+          <td>
+            Useful for handheld devices but narrow in scope. Do not enrich the multi-channel conversational interface required by AIDAP. Strongly rely on device resources and connectivity, conflicting with accessibility and scalability requirements.
+          </td>
+        </tr>
+      </table>
     </td>
   </tr>
   <tr>
-    <td>Web Applications (Discarded Alternative)</td>
-    <td>
-      Bring portability and ease of deployment but fall short in offering a rich, conversational UI experience across modalities (voice, text, multi-language). Lack advanced interaction and personalisation features expected in AIDAP.
-    </td>
-  </tr>
-  <tr>
-    <td>Rich Client Applications (Discarded Alternative)</td>
-    <td>
-      Provide high interactivity but require installation and maintenance on every user's device. Too heavy for AIDAP, which must be cloud-native and available across mobile, web, and voice assistants. Complicates deployment and updates.
-    </td>
-  </tr>
-  <tr>
-    <td>Mobile Applications (Discarded Alternative)</td>
-    <td>
-      Useful for handheld devices but narrow in scope. Do not enrich the multi-channel conversational interface required by AIDAP. Strongly rely on device resources and connectivity, conflicting with accessibility and scalability requirements.
-    </td>
-  </tr>
-  <tr>
-    <td>Three-Tier Distributed Deployment Pattern (Server Side)</td>
+    <td>Three-Tier Distributed Deployment Pattern</td>
     <td>
       Separates presentation, business, and integration tiers. Supports scalability (RA7), high availability (RA6), and performance (RS10). Aligns with cloud-native deployment (R7) and allows independent scaling of tiers. Integration tier is critical for connecting to external university systems (RD1–RD4).
     </td>
