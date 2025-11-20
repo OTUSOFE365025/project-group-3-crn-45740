@@ -92,8 +92,8 @@
 
 <table>
   <tr>
-    <th>Design Decision</th>
-    <th>Rationale</th>
+    <td>Design Decision</td>
+    <td>Rationale</td>
   </tr>
   <tr>
     <td>Rich Internet Application (RIA) Reference Architecture</td>
@@ -108,30 +108,24 @@
     </td>
   </tr>
   <tr>
-    <td colspan="2">
-      <strong>Discarded Alternatives</strong>
-      <table border="1" cellpadding="4" cellspacing="0" width="100%">
+    <td>Discarded Alternatives</td>
+    <td>
+      <table>
         <tr>
-          <th>Alternative</th>
-          <th>Reason for Discarding</th>
+          <td>Alternative</td>
+          <td>Reason for Discarding</td>
         </tr>
         <tr>
           <td>Web Applications</td>
-          <td>
-            Bring portability and ease of deployment but fall short in offering a rich, conversational UI experience across modalities (voice, text, multi-language). Lack advanced interaction and personalisation features expected in AIDAP.
-          </td>
+          <td>Bring portability and ease of deployment but fall short in offering a rich, conversational UI experience across modalities (voice, text, multi-language). Lack advanced interaction and personalisation features expected in AIDAP.</td>
         </tr>
         <tr>
           <td>Rich Client Applications</td>
-          <td>
-            Provide high interactivity but require installation and maintenance on every user's device. Too heavy for AIDAP, which must be cloud-native and available across mobile, web, and voice assistants. Complicates deployment and updates.
-          </td>
+          <td>Provide high interactivity but require installation and maintenance on every user's device. Too heavy for AIDAP, which must be cloud-native and available across mobile, web, and voice assistants. Complicates deployment and updates.</td>
         </tr>
         <tr>
           <td>Mobile Applications</td>
-          <td>
-            Useful for handheld devices but narrow in scope. Do not enrich the multi-channel conversational interface required by AIDAP. Strongly rely on device resources and connectivity, conflicting with accessibility and scalability requirements.
-          </td>
+          <td>Useful for handheld devices but narrow in scope. Do not enrich the multi-channel conversational interface required by AIDAP. Strongly rely on device resources and connectivity, conflicting with accessibility and scalability requirements.</td>
         </tr>
       </table>
     </td>
