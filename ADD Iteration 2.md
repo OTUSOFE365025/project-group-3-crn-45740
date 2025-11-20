@@ -61,3 +61,15 @@
     </td>
   </tr>
 </table>
+
+
+<h3>Step 2: Establish the iteration goal by selecting drivers</h3>
+
+<ul>
+  <li><strong>QA-1: Performance</strong> – Ensure the system responds within 2 seconds for typical queries; optimize read-heavy endpoints via caching.</li>
+  <li><strong>QA-2: Availability</strong> – Achieve 99.5% uptime; implement autoscaling, health checks, and failover strategies across all tiers.</li>
+  <li><strong>QA-3: Security</strong> – Complete SSO integration; implement token validation and role-based access control.</li>
+  <li><strong>CRN-3: Integration Reliability</strong> – Ensure adapters handle retries, errors, and rate limits.</li>
+  <li><strong>CON-2: Integration with University Systems</strong> – Use secure, standardized APIs for all external system integrations without disrupting workflows.</li>
+  <li><strong>CON-6: Cloud-Native Deployment</strong> – Deploy system to the cloud using CI/CD pipelines; support containerized services and auto-failover.</li>
+</ul>
