@@ -393,8 +393,8 @@ Failure Detection and Recovery:
   </tr>
   <tr>
     <td></td>
-    <td></td>
     <td>UC-6 System Monitoring</td>
+    <td></td>
     <td>Monitoring module instantiated; autoscaling/failover tactics defined, but redundancy not yet implemented.</td>
   </tr>
 </table>
