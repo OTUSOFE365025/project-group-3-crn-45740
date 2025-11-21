@@ -183,7 +183,8 @@
 
 Reference Architecture:
 
-<img width="900" height="1200" alt="image" src="https://github.com/user-attachments/assets/59597c9c-215d-43f0-9d32-ce75e5e7aeeb" />
+<img width="500" height="900" alt="image" src="https://github.com/user-attachments/assets/823998ff-ce9f-4b65-af0e-d6635d495140" />
+
 
 
 <h4>Client Side Components</h4>
