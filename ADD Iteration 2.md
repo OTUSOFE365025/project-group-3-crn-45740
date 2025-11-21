@@ -306,3 +306,32 @@ Reference Architecture:
     <td>Provides standardized libraries for communication, notifications, and work modules.</td>
   </tr>
 </table>
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Sequence Diagram for UC-1: Provide authoritative access to schedules, grades, deadlines, and course data (core assistant functionality).
+
+<img width="1500" height="325" alt="image" src="https://github.com/user-attachments/assets/3aebc326-b7ac-422f-a6b9-a42acb046523" />
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Sequence Diagram for UC-2: Support engagement and communication: push reminders, campus announcements, and anomaly alerts.
+
+<img width="1500" height="325" alt="image" src="https://github.com/user-attachments/assets/6481c1df-ecc1-40a1-99f2-d79ebf54a891" />
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Sequence Diagram for UC-6: Ensure scalability, uptime, and monitoring capabilities to support institutional reliability and trust.
+
+Monitoring:
+
+<img width="1500" height="325" alt="image" src="https://github.com/user-attachments/assets/359a2a98-5d67-4184-a67c-074aa235817a" />
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Failure Detection and Recovery:
+
+<img width="1500" height="325" alt="image" src="https://github.com/user-attachments/assets/f0887fcf-6e41-40bc-a365-e73ecbe73e43" />
+
+
+
