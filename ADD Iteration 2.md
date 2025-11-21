@@ -334,4 +334,67 @@ Failure Detection and Recovery:
 <img width="1500" height="325" alt="image" src="https://github.com/user-attachments/assets/f0887fcf-6e41-40bc-a365-e73ecbe73e43" />
 
 
+<h2>Step 7: Perform analysis of the current design and review the iteration goal and design objectives</h2>
 
+<table>
+  <tr>
+    <th>Not Addressed</th>
+    <th>Partially Addressed</th>
+    <th>Completely Addressed</th>
+    <th>Design Decisions Made During Iteration</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>QA-1 Performance</td>
+    <td></td>
+    <td>Cache-aside pattern improves read endpoints; concurrency tactics deferred.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>QA-2 Availability</td>
+    <td></td>
+    <td>Monitoring + autoscaling defined; redundancy/failover deferred to Iteration 3.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>QA-3 Security</td>
+    <td>SSO/OIDC integration + role-based access control instantiated.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UC-1 Query Info</td>
+    <td>Adapters + Cache + Domain Objects support query flow.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UC-2 Notifications</td>
+    <td>NotificationController + Announcement DomainObject + EmailAdapter support batch alerts.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CRN-3 Integration Reliability</td>
+    <td></td>
+    <td>Integration logic was embedded directly into service components without abstraction. Error handling is implemented locally for each service.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>CON-6 Cloud-Native Deployment</td>
+    <td></td>
+    <td>Containerization and CI/CD assumed; orchestration tactics deferred.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>CON-2 Integration</td>
+    <td>Secure APIs enforced via adapters.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>UC-6 System Monitoring</td>
+    <td>Monitoring module instantiated; autoscaling/failover tactics defined, but redundancy not yet implemented.</td>
+  </tr>
+</table>
