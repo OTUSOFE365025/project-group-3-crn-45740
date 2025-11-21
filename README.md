@@ -11,9 +11,9 @@ Rabab Raza (100932792)
 
 Work Distribution:
 
-Jayden Mallari: Use cases, use case diagram, quality attributes
+Jayden Mallari: Use cases, use case diagram, quality attributes, ADD Iteration 1, ADD Iteration 2: Steps 5, 6, 7
 
-Rabab Raza: Business Case, concerns, constraints
+Rabab Raza: Business Case, concerns, constraints, ADD Iteration 1, ADD Iteration 2: Steps 1, 2, 3, 4
 
 -----------------------------------------------------------------------------------------------------------
 
