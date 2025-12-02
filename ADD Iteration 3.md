@@ -237,9 +237,30 @@ The other quality attributes, QA-1 Performance and QA-4 Usability, will also be 
   </tr>
 </table>
 
-<h3>ATAM Table</h3>
+
+<h3>ATAM Table – Analyzing Scenario QA-2</h3>
 
 <table>
+  <tr>
+    <th>Scenario</th>
+    <td colspan="3">If there is any detected fault or system failure, AIDAP will back up and recover the data. The system should maintain an uptime of 99.5% per month.</td>
+  </tr>
+  <tr>
+    <th>Attribute</th>
+    <td colspan="3">Availability</td>
+  </tr>
+  <tr>
+    <th>Stimulus</th>
+    <td colspan="3">Failure or fault detected by the system.</td>
+  </tr>
+  <tr>
+    <th>Environment</th>
+    <td colspan="3">Normal operation</td>
+  </tr>
+  <tr>
+    <th>Response</th>
+    <td colspan="3">AIDAP will back up and recover the data.</td>
+  </tr>
   <tr>
     <th>Architecture Decision</th>
     <th>Risk</th>
