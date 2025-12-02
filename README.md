@@ -11,9 +11,9 @@ Rabab Raza (100932792)
 
 Work Distribution:
 
-Jayden Mallari: Use cases, use case diagram, quality attributes, ADD Iteration 1, ADD Iteration 2: Steps 5, 6, 7
+Jayden Mallari: Use cases, use case diagram, quality attributes, ADD Iteration 1, ADD Iteration 2: Steps 5, 6, 7, ADD Iteration 3, Refined Deployment Diagram, ATAM Risk Analysis
 
-Rabab Raza: Business Case, concerns, constraints, ADD Iteration 1, ADD Iteration 2: Steps 1, 2, 3, 4
+Rabab Raza: Business Case, concerns, constraints, ADD Iteration 1, ADD Iteration 2: Steps 1, 2, 3, 4, ADD Iteration 3, Iteration 3 Sequence Diagram, Utility Tree
 
 -----------------------------------------------------------------------------------------------------------
 
