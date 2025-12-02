@@ -222,3 +222,112 @@ The other quality attributes, QA-1 Performance and QA-4 Usability, will also be 
   </tr>
   <tr>
     <td>T2</td>
+    <td>Backup/Recovery Module</td>
+    <td>Higher redundancy provides better uptime but increases cost.</td>
+  </tr>
+  <tr>
+    <td>T3</td>
+    <td>Availability Manager</td>
+    <td>Faster failover decreases downtime but risks incomplete recovery.</td>
+  </tr>
+  <tr>
+    <td>T4</td>
+    <td>Cloud Deployment</td>
+    <td>Higher scaling increases availability but makes data consistency harder.</td>
+  </tr>
+</table>
+
+<h4>Analyzing Scenario</h4>
+<table>
+  <tr>
+    <td>Analyzing Scenario</td>
+    <td colspan="3">QA-2</td>
+  </tr>
+  <tr>
+    <td>Scenario</td>
+    <td colspan="3">If there is any detected fault or system failure, AIDAP will back up and recover the data. The system should maintain an uptime of 99.5% per month.</td>
+  </tr>
+  <tr>
+    <td>Attributes</td>
+    <td colspan="3">Availability</td>
+  </tr>
+  <tr>
+    <td>Stimulus</td>
+    <td colspan="3">Failure or fault detected by the system.</td>
+  </tr>
+  <tr>
+    <td>Environment</td>
+    <td colspan="3">Normal operation</td>
+  </tr>
+  <tr>
+    <td>Response</td>
+    <td colspan="3">AIDAP will back up and recover the data.</td>
+  </tr>
+  <tr>
+    <td>Architecture Decision</td>
+    <td>Risk</td>
+    <td>Sensitivity</td>
+    <td>Tradeoff</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>Continuous Monitoring Service</td>
+    <td>R1</td>
+    <td>S1</td>
+    <td>T1</td>
+  </tr>
+  <tr>
+    <td>Backup/Recovery Module</td>
+    <td>R2</td>
+    <td>S2</td>
+    <td>T2</td>
+  </tr>
+  <tr>
+    <td>Availability Manager</td>
+    <td>R3</td>
+    <td>S3</td>
+    <td>T3</td>
+  </tr>
+  <tr>
+    <td>Cloud Deployment</td>
+    <td>R4</td>
+    <td>S4</td>
+    <td>T4</td>
+  </tr>
+</table>
+
+
+<h3>Utility Tree</h3>
+
+<ul>
+  <li><strong>Availability</strong>
+    <ul>
+      <li>(H,H) Fault Detection & Recovery – If a fault/system failure is detected, AIDAP will back up and recover data and maintain 99.5% uptime/month.</li>
+      <li>(H,M) Database Replication & Failover – System automatically switches to replica DB when primary fails.</li>
+      <li>(H,H) Backup & Rollback – System rolls back to last good state after failure using redundancy.</li>
+    </ul>
+  </li>
+  <li><strong>Performance</strong>
+    <ul>
+      <li>(H,M) Response Time – System responds to user queries in ≤ 2 seconds.</li>
+      <li>(M,L) Monitoring Performance Metrics – Latency, CPU, and event rates collected for optimization.</li>
+      <li>(M,M) Real-time Operation Accuracy – Health metrics available instantly for admins.</li>
+    </ul>
+  </li>
+  <li><strong>Security</strong>
+    <ul>
+      <li>(H,M) Authentication & SSO – Only authorized users can access AIDAP using single sign-on.</li>
+      <li>(M,M) Data Confidentiality – All system data is protected during backup and recovery.</li>
+      <li>(H,H) Data Integrity – Recovery process must not corrupt user or exam data.</li>
+    </ul>
+  </li>
+  <li><strong>Usability</strong>
+    <ul>
+      <li>(H,M) Smooth User Experience During Recovery – Failover must cause minimal disruption to student/faculty users.</li>
+      <li>(M,L) First-Time User Success – Students can retrieve exam information without guidance.</li>
+      <li>(M,M) Clear Admin Monitoring Dashboard – Admin sees health alerts, uptime logs, and metrics in readable form.</li>
+    </ul>
+  </li>
+</ul>
