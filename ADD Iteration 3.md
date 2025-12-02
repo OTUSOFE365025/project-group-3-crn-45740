@@ -308,33 +308,4 @@ Sequence diagram of the user performing an operation. The user must log in, and 
 
 <h3>Utility Tree</h3>
 
-<ul>
-  <li><strong>Availability</strong>
-    <ul>
-      <li>(H,H) Fault Detection & Recovery – If a fault/system failure is detected, AIDAP will back up and recover data and maintain 99.5% uptime/month.</li>
-      <li>(H,M) Database Replication & Failover – System automatically switches to replica DB when primary fails.</li>
-      <li>(H,H) Backup & Rollback – System rolls back to last good state after failure using redundancy.</li>
-    </ul>
-  </li>
-  <li><strong>Performance</strong>
-    <ul>
-      <li>(H,M) Response Time – System responds to user queries in ≤ 2 seconds.</li>
-      <li>(M,L) Monitoring Performance Metrics – Latency, CPU, and event rates collected for optimization.</li>
-      <li>(M,M) Real-time Operation Accuracy – Health metrics available instantly for admins.</li>
-    </ul>
-  </li>
-  <li><strong>Security</strong>
-    <ul>
-      <li>(H,M) Authentication & SSO – Only authorized users can access AIDAP using single sign-on.</li>
-      <li>(M,M) Data Confidentiality – All system data is protected during backup and recovery.</li>
-      <li>(H,H) Data Integrity – Recovery process must not corrupt user or exam data.</li>
-    </ul>
-  </li>
-  <li><strong>Usability</strong>
-    <ul>
-      <li>(H,M) Smooth User Experience During Recovery – Failover must cause minimal disruption to student/faculty users.</li>
-      <li>(M,L) First-Time User Success – Students can retrieve exam information without guidance.</li>
-      <li>(M,M) Clear Admin Monitoring Dashboard – Admin sees health alerts, uptime logs, and metrics in readable form.</li>
-    </ul>
-  </li>
-</ul>
+<img width="1558" height="893" alt="image" src="https://github.com/user-attachments/assets/3f1c69f6-d09a-4a80-be02-cdc155dbd9f3" />
