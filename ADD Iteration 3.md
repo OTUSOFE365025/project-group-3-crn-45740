@@ -148,7 +148,7 @@ The other quality attributes, QA-1 Performance and QA-4 Usability, will also be 
   </tr>
 </table>
 
-<h3>ATAM Risk Assessment</h3>
+<h2>ATAM Risk Assessment</h2>
 
 <h4>Risks</h4>
 <table>
