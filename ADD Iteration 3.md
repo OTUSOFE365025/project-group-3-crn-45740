@@ -70,7 +70,17 @@ The other quality attributes, QA-1 Performance and QA-4 Usability, will also be 
 </table>
 
 <h3>Step 6: Sketch views and record design decisions</h3>
-<p>(Deployment and sequence diagrams omitted as requested.)</p>
+
+<img width="1775" height="1293" alt="image" src="https://github.com/user-attachments/assets/c390432c-baa6-4dc3-9f1d-8eacfd130235" />
+
+Refined Deployment Diagram
+
+
+<img width="1847" height="1406" alt="image" src="https://github.com/user-attachments/assets/b7674332-dc11-4471-957f-b23e7adcd428" />
+
+Sequence diagram of the user performing an operation. The user must log in, and the operation is securely stored.
+
+           
 
 <h3>Step 7: Perform analysis of current design and review iteration goal and design objectives</h3>
 <table>
@@ -147,6 +157,8 @@ The other quality attributes, QA-1 Performance and QA-4 Usability, will also be 
     <td>Health metrics provided by Monitoring Service. Availability Manager ensures recovery. Backup/Recovery module supports continuous service for 5000+ users.</td>
   </tr>
 </table>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <h2>ATAM Risk Assessment</h2>
 
